@@ -1,3 +1,10 @@
+#include <stdio.h>
+/*biblioteca de threads */
+#include <pthread.h> 
+#include <unistd.h>
+
+/* Mutexes utilizados */
+pthread_mutex_t lock1, lock2;
 
 void* Processo_A(void* arg) {
     while (1) {
